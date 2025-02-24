@@ -1,0 +1,5 @@
+grave num como 10
+	enquanto(num > 0){
+	mostre num
+	diminui num em 1
+}

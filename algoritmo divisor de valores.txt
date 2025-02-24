@@ -1,0 +1,15 @@
+pede um valor para o usuario 
+grava o valor como num 1
+pede outro valor para o usuario
+enquanto esse valor for menor ou igual a 0 
+	peça um novo valor
+	regrave o novo valor
+
+grave resultado como num 1 / valor
+mostre resultado
+
+ valor = 8
+ num 1= 10
+ resultado 10 / 8
+ 
+ 10 , -9, 0,8

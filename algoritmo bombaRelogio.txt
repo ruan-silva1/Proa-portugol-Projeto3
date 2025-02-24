@@ -1,0 +1,7 @@
+grava tempo como 30
+	enquanto tempo for > 0 
+	escreva tempo
+	aguarde 1 segundo
+	tempo diminui 1
+escreva("explosão")
+

@@ -1,0 +1,21 @@
+pede para o usuario um numero
+grava esse numero como num1
+pede para o usuario outro numero
+enquanto esse numero for maior que o num1
+	pede para o usuario escolher outro numero
+	grava como novo valor
+
+grava quantidade_de_numeros como num1 - valor
+grava soma como 0
+enqunto (num1 >= valor){
+	soma+=num
+	diminua num1 em 1
+}
+grave media como soma / quantidade_de_numeros
+escreva media
+
+qtde = 100 - 10
+soma = 100
+valor = 10
+num 1 = 99
+100 200 101 10
