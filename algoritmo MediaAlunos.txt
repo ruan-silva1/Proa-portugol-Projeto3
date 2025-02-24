@@ -1,0 +1,29 @@
+grava alunos = 0
+soma = 0
+
+	gerarMediaAluno 
+	
+	pede para o usuario uma nota
+		enquanto valor for menor que 0 ou maior que 10
+		peça para escolher outro valor
+		grave esse novo valor
+		soma += valor
+	repita 6x
+	
+	media = soma / 2
+	se media >= 9.5 mostre aluno aprovado
+	senao mostre aluno reprovado
+
+soma alunos + 1
+pede para o usuario digitar s ou n
+enquanto s repita gerarMediaAluno some alunos + 1
+pede para o usuario cadastrar sim ou nao novamente
+
+mostre a media dos alunos e a quantidade de alunos
+encerre o programa
+
+10,20,5,7
+valor = 10
+soma += 10+5+7
+media soma/2
+

@@ -14,8 +14,3 @@ enqunto (num1 >= valor){
 grave media como soma / quantidade_de_numeros
 escreva media
 
-qtde = 100 - 10
-soma = 100
-valor = 10
-num 1 = 99
-100 200 101 10
