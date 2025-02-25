@@ -18,7 +18,7 @@ programa
 		//contator()
 		//contatorAcimaCem()
 		//mostrarTabuada()
-		numerosentre()
+		//numerosentre()
 	}
 
 	funcao divisorDeValores(){
@@ -171,14 +171,14 @@ programa
 	funcao numerosentre(){
 
 		inteiro i = 0
-		inteiro numerosEntre24e42[] = {0}
-		inteiro indicesEntre24e42 = 1
-		inteiro numerosNaoEntre24e42[] = {0}
-		inteiro indicesNaoEntre24e42 = 1 
+		inteiro numerosEntre24e42[20]
+		inteiro indicesEntre24e42 = 0
+		inteiro numerosNaoEntre24e42[20]
+		inteiro indicesNaoEntre24e42 = 0
 		inteiro valor 
 		
 		enquanto(i<10){
-		escreva("digite o " + i + "°" + "valor")
+		escreva("digite o " + (i+1) + "°" + " valor ")
 		leia(valor)
 		se(valor >= 24 e valor <=42){
 			numerosEntre24e42[indicesEntre24e42] = valor
@@ -188,21 +188,22 @@ programa
 			numerosNaoEntre24e42[indicesNaoEntre24e42] = valor
 			indicesNaoEntre24e42++
 		}
+		
 		i++
 		}
 		
 		escreva("os numeros entre 24 e 42 sao \n")
-		i=1
+		i=0
 		
 		enquanto(i<indicesEntre24e42){
 				escreva(numerosEntre24e42[i] + " ")
 				i++
 		}
 		
-		escreva("os numeros que nao estao entre 24 e 42 sao \n")
-		i=1
+		escreva("\n os numeros que nao estao entre 24 e 42 sao \n")
+		i=0
 			enquanto(i<indicesNaoEntre24e42){
-				escreva(numerosEntre24e42[indicesNaoEntre24e42] + " ")
+				escreva(numerosNaoEntre24e42[i] + " ")
 				i++
 			}
 	}
@@ -216,7 +217,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 4191; 
+ * @POSICAO-CURSOR = 1248; 
  * @DOBRAMENTO-CODIGO = [23, 38, 48, 56, 84, 100, 125, 140, 150];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
