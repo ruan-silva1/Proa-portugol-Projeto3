@@ -1,0 +1,16 @@
+
+pede para o usuario um numero
+grava o numero
+
+enquanto 1 for menor ou igual ao numero
+	i = 1
+	enquanto i for menor ou igual a 10
+		mostre tabuta do ...  \n o numero * i = numero * i
+		i++
+	diminua o numero
+
+4
+
+tabuada do 4 
+4 * 1 ...
+3...

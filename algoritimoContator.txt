@@ -1,0 +1,11 @@
+grava i = 0
+pede para o usuario escolhe um numero
+	enquanto o numero < 0 
+		pede para o usuario outro numero
+		grava o numero
+grava o numero
+enquanto(i<numero){
+	mostre i
+	i++
+}
+
