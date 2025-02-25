@@ -1,0 +1,29 @@
+i = 0
+numerosEntre24e42[20] 
+indicesEntre24e42 = 0
+numerosNaoEntre24e42[20]
+indicesNaoEntre24e42 = 0
+
+enquanto i for menor que que 10
+ pede para o usuario que digite o i° valor 
+ grava o valor
+ se valor for maior ou igual a 24 e menor ou igual 42
+  numerosEntre24e42[ indicesEntre24e42] = valor
+  indicesEntre24e42 ++
+ senao
+  numerosNaoEntre24e42[ indicesNaoEntre24e42] = valor
+  indicesNaoEntre24e42 ++
+i++
+ 
+ mostre os numeros entre 24 e 42 sao
+ i=0
+	 enquanto i for menor que indicesEntre24e42 
+		 mostre numerosEntre24e42[i]
+		 i++
+mostre os numeros que nao estão 24 e 42 sao
+i=0
+	enquanto i for menor que indicesNaoEntre24e42 
+		 numerosNaoEntre24e42[i]
+		 i++
+ 
+
