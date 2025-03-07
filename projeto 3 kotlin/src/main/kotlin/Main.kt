@@ -3,10 +3,28 @@ package org.example
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    buscarIntevarlo()
+    mostrarTabuata()
+    //buscarIntevarlo()
     //calcularMedia15a100()
     //contador()
     //explodirBomba()
+}
+
+fun mostrarTabuata(){
+
+    println("escreva um numero maior ou igual a 1")
+    var numero = readln().toInt()
+    while(1<=numero){
+        var i = 1
+        println("tabuado do $numero")
+        while(i<=10){
+            var resultado: Int = numero * i
+            println("$numero * $i = $resultado")
+            i++
+        }
+        numero--
+    }
+
 }
 
 fun buscarIntevarlo(){
