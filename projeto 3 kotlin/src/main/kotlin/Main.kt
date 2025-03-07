@@ -3,8 +3,57 @@ package org.example
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    contador()
+    buscarIntevarlo()
+    //calcularMedia15a100()
+    //contador()
     //explodirBomba()
+}
+
+fun buscarIntevarlo(){
+    var i = 1
+    var numerosEntre24e42 = DoubleArray(20)
+    var indicesEntre24e42 = 0
+    var numerosNaoEntre24e42 = DoubleArray(20)
+    var indicesNaoEntre24e42 = 0
+
+    while(i<11){
+        println("digite o $i° valor")
+        var valor = readln().toDouble()
+        if(valor in 24.0..42.0){
+            numerosEntre24e42[indicesEntre24e42] = valor
+            indicesEntre24e42++
+        }
+        else{
+            numerosNaoEntre24e42[indicesNaoEntre24e42] = valor
+            indicesNaoEntre24e42++
+        }
+
+        i++
+    }
+    println("os numeros entre 24 e 42 são")
+    i=0
+    while(i<indicesEntre24e42){
+        print("${numerosEntre24e42[i]}, ")
+        i++
+    }
+    println("\n os numeros que nao estão entre 24 e 42")
+    i=0
+    while(i<indicesNaoEntre24e42){
+        print("${numerosNaoEntre24e42[i]}, ")
+        i++
+    }
+}
+
+fun calcularMedia15a100(){
+    val numerosEntre = 100 - 15
+    var soma = 0
+    var i = 15
+    while(i in 15..100){
+        soma+=i
+        i++
+    }
+    val media = (soma / numerosEntre).toDouble()
+    println("a media é $media")
 }
 
 fun mediaAluno() {

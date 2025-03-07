@@ -1,0 +1,11 @@
+numerosEntre = 100 - 15
+soma = 0
+i = 15
+
+enquanto(i in 15..100){
+soma +=i
+i++
+}
+
+media = soma / numerosEntre
+mostre a media é ..
