@@ -3,7 +3,8 @@ package org.example
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    mostrarTabuata()
+    mediaAluno()
+    //mostrarTabuata()
     //buscarIntevarlo()
     //calcularMedia15a100()
     //contador()
@@ -75,11 +76,40 @@ fun calcularMedia15a100(){
 }
 
 fun mediaAluno() {
+    var alunos = 0
+    gerarMediaAluno()
+    alunos ++
+    println("deseja cadastrar mais alunos? S/N")
+    var resposta = readln()
+    while(resposta == "s"){
+        gerarMediaAluno()
+        alunos ++
+        println("deseja cadastrar mais alunos? S/N")
+        resposta = readln()
+    }
+    println("alunos cadastrados = $alunos")
+}
+
+fun gerarMediaAluno(){
+    var soma = 0.0
     var i = 1
+    var nota = 0.0
     while (i in 1..6) {
         println("qual a $i° nota")
-        
+        nota = readln().toDouble()
+        while(nota < 0.0 || nota > 10.0){
+            println("escolha um valor entre 0 e 10")
+            nota = readln().toDouble()
+        }
+        soma+=nota
         i++
+    }
+    val media = soma / 6
+    if(media >= 9.5){
+        println("Aluno Aprovado! a media do aluno foi $media")
+    }
+    else{
+        println("Aluno reprovado! a media do aluno foi $media")
     }
 }
 
